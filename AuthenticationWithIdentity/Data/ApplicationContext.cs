@@ -10,6 +10,11 @@ namespace AuthenticationWithIdentity.Data
       : base(options)
         {
         }
-        DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<ApplicationUser> Users { get; set; }
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+        public DbSet<Page> Pages { get; set; }
+        public DbSet<PageAction> PageActions { get; set; }
+
+
     }
 }
